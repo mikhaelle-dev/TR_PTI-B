@@ -319,8 +319,6 @@ body {
 
 
 
-
-
 .location-section {
   text-align: center;
   padding: 26px 7%;
@@ -338,6 +336,7 @@ body {
   max-width: 700px;
   margin: 0 auto 50px auto;
   line-height: 1.6;
+  margin-bottom: 70px;
 }
 
 .location-grid {
