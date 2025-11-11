@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #333;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
   overflow-x: hidden;
 }
 
@@ -22,62 +23,30 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 40px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.992);
   backdrop-filter: blur(8px);
   z-index: 1000;
 }
 
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 45px;
 }
 
 nav ul li a {
-  color: white;
+  color: #d4af37;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ff6600;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  color: #fff;
 }
 
 
-
-.book-now {
-  background-color: #d95700;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.book-now:hover {
-  background-color: #ff6600;
-}
-
-/* Biar konten nggak ketutup navbar */
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-.room-section {
-  padding-top: 100px;
-}
-
+/* ===== VIDEO BACKGROUND ===== */
 .video-bg {
   position: relative;
   width: 100%;
@@ -85,61 +54,45 @@ body {
   z-index: 0;
   border: none;
   pointer-events: none;
-    display: block;
+  display: block;
 }
-
-
-
 
 /* ===== ROOM SECTION ===== */
 .room-section {
-  background-color: #fafafa;
-  padding: 100px 5%;
+  background-color: #121212;
+  padding: 120px 5%;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  margin-top: 10vh; /* muncul setelah video full screen */
+  color: #d4af37;
 }
 
 .room-section h3 {
   font-size: 3em;
   letter-spacing: 2px;
-  color: #8a8a8a;
+  color: #b9972f;
   margin-bottom: 10px;
 }
 
 .room-section h1 {
   font-size: 4em;
-  margin-bottom: 15px;
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .room-section p {
-  font-size: 1.3em;
-  color: #666;
-  margin-bottom: 0px;
+  font-size: 1.2em;
+  color: #ddd;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   line-height: 1.6;
 }
 
-
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  background-color: #fff;
-}
-
-/* ===== SECTION UTAMA ===== */
+/* ===== INTRO SECTION ===== */
 .intro-section {
   padding: 100px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  margin-top: 0vh;
+  background: linear-gradient(180deg, #0f0f0f 0%, #141414 100%);
 }
 
 .intro-container {
@@ -150,7 +103,6 @@ body {
   max-width: 1200px;
 }
 
-/* ===== GAMBAR ===== */
 .intro-images {
   position: relative;
   flex: 1 1 45%;
@@ -177,35 +129,35 @@ body {
 }
 
 .orange-line {
-  width: 60px;
+  width: 120px;
   height: 3px;
-  background-color: #d95700;
-  margin-bottom: 10px;
+  background-color: #ffd500;
+  margin-bottom: 18px;
 }
 
 .intro-header h4 {
   font-size: 14px;
-  color: #333;
-  letter-spacing: 1px;
+  color: #ffffff;
+  letter-spacing: 3px;
   margin-bottom: 15px;
 }
 
 .intro-text h2 {
   font-size: 32px;
   font-weight: 700;
-  color: #1e1e1e;
+  color: #d4af37;
   margin-bottom: 15px;
 }
 
 .intro-text p {
   line-height: 1.8;
-  color: #555;
+  color: #ffffff;
   font-size: 15px;
   margin-bottom: 25px;
 }
 
 .intro-text h3 {
-  color: #1e1e1e;
+  color: #d4af37;
   margin-bottom: 15px;
 }
 
@@ -221,307 +173,311 @@ body {
   align-items: start;
   gap: 10px;
   margin-bottom: 12px;
-  color: #333;
-}
-
-.features i {
-  color: #d95700;
-  margin-top: 4px;
-  width: 20px;
+  color: #ffffff;
 }
 
 
 
 
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #333;
-}
 
+/* ===== VENUE SECTION ===== */
 .venue-section {
   text-align: center;
-  padding: 50px 10%;
-
+  padding: 80px 10%;
+  background-color: #0b0b0b;
 }
 
 .venue-section h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 2.4em;
+  color: #d4af37;       /*BAGIAN JUDUL Prime Venue for Every Occasion */
+  margin-bottom: 20px;
 }
 
 .description {
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
+  color: #ccc;
+  max-width: 700px;           /*BAGIAN DESK Prime Venue for Every Occasion */
+  margin: 0 auto 40px;
   line-height: 1.6;
-  
 }
 
+/* Grid tetap 3 */
 .venue-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-      margin-top: 70px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+  align-items: stretch;
+  margin-top: 60px;
 }
 
+/* Card / KOTAK2 */
 .venue-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(242, 255, 0, 0.15);
   overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .venue-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(229, 255, 0, 0.3);   /*SHADOW*/
 }
 
+/* Gambar */
 .venue-card img {
   width: 100%;
-  height: 200px;
+  height: 70%;
   object-fit: cover;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
+.venue-card:hover img {
+  filter: brightness(1);
+  transform: scale(1.03);
+}
+
+/* Judul */
 .venue-card h3 {
-  margin: 15px 0 5px 0;
+  color: #d4af37;
   font-size: 1.2em;
+  margin: 15px 20px 5px;
+  text-align: left;
 }
 
+/* Deskripsi */
 .venue-card p {
-  color: #666;
-  font-size: 0.9em;
-  margin: 0 15px 20px 15px;
+  color: #bbb;
+  font-size: 0.95em;
+  margin: 0 20px 25px;
+  line-height: 1.5;
+  text-align: left;
+  flex-grow: 1;
 }
 
+/* Tombol */
 .venue-card button {
-  background-color: #e85a0d;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
+  background-color: #000;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  padding: 10px 25px;
   cursor: pointer;
-  margin-bottom: 20px;
-  transition: background 0.3s ease;
+  align-self: center;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
 }
 
 .venue-card button:hover {
-  background-color: #c84a08;
-
+  background-color: #d4af37;
+  color: #000;
 }
 
 
-
-
-
+/* ===== LOCATION SECTION ===== */
 .location-section {
   text-align: center;
-  padding: 26px 7%;
-  background-color: #fff;
+  padding: 80px 10%;
+  background-color: #131313;
 }
 
 .location-section h1 {
-  font-size: 2em;
-  line-height: 1.3;
+  font-size: 2.2em;
+  color: #d4af37;
   margin-bottom: 15px;
 }
 
 .location-section .description {
-  color: #555;
+  color: #ccc;
   max-width: 700px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 50px;
   line-height: 1.6;
-  margin-bottom: 70px;
 }
 
+/* Layout fix 3 kolom juga */
 .location-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   justify-items: center;
+  align-items: stretch;
+  margin-top: 40px;
 }
 
+/* Card */
 .location-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #111;
+  border: 1px solid #393937;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.1);
   overflow: hidden;
   text-align: left;
-  max-width: 300px;
+  width: 100%;
+  max-width: 340px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .location-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.25);
 }
 
 .location-card img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.location-card:hover img {
+  filter: brightness(1);
 }
 
 .location-card h3 {
   font-size: 1em;
   font-weight: bold;
-  margin: 15px 15px 5px 15px;
+  color: #d4af37;
+  margin: 15px 15px 5px;
 }
 
 .location-card p {
   font-size: 0.9em;
-  color: #666;
-  margin: 0 15px 20px 15px;
+  color: #ccc;
+  margin: 0 15px 20px;
   line-height: 1.5;
 }
 
-/* Responsif */
 @media (max-width: 992px) {
+  .venue-grid,
   .location-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
+  .venue-grid,
   .location-grid {
     grid-template-columns: 1fr;
   }
-
-  .location-card {
-    max-width: 100%;
-  }
 }
 
 
 
+/* ===== FOOTER ===== */
+.footer {
+  background-color: linear-gradient(180deg, #000 0%, #0c0c0c 100%);
+  color: #d4af37;
+  padding: 60px 80px 40px;
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===== ROOM CARD ===== */
-.room-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(241, 241, 241);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
-}
-
-.room-card img {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10px;
+  text-align: left; 
 }
 
 
-.room-info {
-  width: 45%;
-  padding: 40px;
-  text-align: left;
-}
 
-.room-info h3 {
-  font-size: 1.8em;
+.footer-container p strong {
+  color: #fff;
+  font-size: 27px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
-.room-info p {
-  font-size: 1em;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.5;
+.footer-container a {
+  color: #d4af37;
+text-decoration: solid;
+  font-size: 20px;
+  transition: color 0.3s ease;
 }
 
-/* ===== TOMBOL ===== */
-.room-buttons {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.footer-container a:hover {
+  color: #fff;
 }
 
-.book-btn {
-  background-color: #d35400;
-  color: white;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
+/* Footer bawah */
+.footer-bottom {
+  color: #aaa;
+  border-top: 1px solid #333;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 25px;
 }
 
-.book-btn:hover {
-  background-color: #e67e22;
-}
-
-.view-btn {
-  background: none;
-  border: none;
-  color: #d35400;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.view-btn:hover {
-  text-decoration: underline;
-}
-
-/* ===== RESPONSIVE (HP/TABLET) ===== */
-@media (max-width: 768px) {
-  .room-card {
-    flex-direction: column;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
+}
 
-  .room-card img,
-  .room-info {
-    width: 100%;
-  }
-
-  .room-info {
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .room-section {
-    margin-top: 60vh; 
-    padding: 60px 5%;
+  .footer {
+    padding: 40px 30px;
   }
+}
+
+
+
+
+/* Modal awalnya hidden */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ketika di-target (:target) tampil */
+.modal:target {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
 }
