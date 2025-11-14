@@ -57,23 +57,25 @@
             color: orangered;
         }
 
-/* GALLERY SECTION */
 .gallery-section {
     padding: 60px 40px;
     background: #f8f8f8;
     text-align: center;
 }
 
+/* Header Text */
 .gallery-header h4 {
     font-size: 16px;
     letter-spacing: 2px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .gallery-header h2 {
     font-size: 42px;
     font-weight: 600;
-    margin-top: 10px;
+    color: #222;
+    margin: 0;
 }
 
 .gallery-header p {
@@ -82,12 +84,13 @@
     color: #666;
 }
 
-/* GRID */
+/* Photo Grid */
 .gallery-grid {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+    padding: 0 20px;
 }
 
 .gallery-grid img {
@@ -103,96 +106,14 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* VENUE SECTION */
-.container {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.venue-card {
-    width: 300px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    overflow: hidden;
-    text-align: center;
-    transition: .3s;
-}
-
-.venue-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.venue-card h3 {
-    margin: 15px 0 5px;
-}
-
-.venue-card p {
-    font-size: 14px;
-    color: #666;
-    padding: 0 15px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background: orangered;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: .3s;
-}
-
-.btn:hover {
-    background: #cc3700;
-}
-
-.venue-card:hover {
-    transform: translateY(-8px);
-}
-
-/* FOOTER */
-.footer {
-    background: #111;
-    color: white;
-    padding: 40px 50px;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-logo h3 {
-    font-size: 26px;
-    margin-bottom: 5px;
-}
-
-.footer-logo span {
-    color: orange;
-}
-
-.footer-contact h4,
-.footer-social h4 {
-    margin-bottom: 10px;
-}
-
-/* RESPONSIVE */
+/* Mobile Friendly */
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .overlay-text h1 {
-        font-size: 38px;
+    .gallery-header h2 {
+        font-size: 30px;
     }
 }
 
@@ -200,40 +121,33 @@
     .gallery-grid {
         grid-template-columns: 1fr;
     }
-
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
+
+/* FOOTER */
 .footer {
-    background-color: #111;
-    padding: 50px;
+    background: #111;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
 }
 
 .footer-content {
+    width: 85%;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
-    color: #d4af37;
+    flex-wrap: wrap;
 }
 
 .footer-logo h3 {
-    color: #d4af37;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .footer-logo span {
-    color: white;
+    color: orange;
 }
 
-.footer p, .footer h4 {
-    color: #ccc;
-}
-
-.footer h4 {
-    color: #d4af37;
+.footer-social h4 {
     margin-bottom: 10px;
 }
