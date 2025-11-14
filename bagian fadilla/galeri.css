@@ -114,7 +114,7 @@ html,body {
 
 .gallery-section {
     padding: 60px 40px;
-    background: #f8f8f8;
+    background: #000000;
     text-align: center;
 }
 
@@ -122,21 +122,21 @@ html,body {
 .gallery-header h4 {
     font-size: 16px;
     letter-spacing: 2px;
-    color: #333;
+    color: #d4af37;
     margin-bottom: 10px;
 }
 
 .gallery-header h2 {
     font-size: 42px;
     font-weight: 600;
-    color: #222;
+    color: #d4af37;
     margin: 0;
 }
 
 .gallery-header p {
     margin-top: 15px;
     font-size: 18px;
-    color: #666;
+    color: white;
 }
 
 /* Photo Grid */
@@ -184,7 +184,7 @@ html,body {
     background: #111;
     color: white;
     padding: 40px 0;
-    margin-top: 50px;
+    margin-top:0;
 }
 
 .footer-content {
