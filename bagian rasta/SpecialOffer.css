@@ -5,12 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif;
 }
 
 body {
     background: #111;
     color: #fff;
+    font-family: 'Georgia', serif;
 }
 
 /* =============================
@@ -18,58 +18,57 @@ body {
 ============================= */
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
-  background-color: #111;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #d4af37;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
 }
 
 .logo span {
-  color: white;
+    color: white;
 }
 
 .navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
 
 .navbar a {
-  color: #d4af37;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: 0.3s;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
 }
 
-.navbar a:hover,
-.navbar .active-nav {
-  color: white;
+.navbar a:hover {
+    color: white;
 }
 
 .book-btn {
-  background-color: #d4af37;
-  color: black;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .book-btn:hover {
-  background-color: white;
-  color: #111;
+    background-color: white;
+    color: #111;
 }
 
 /* =============================

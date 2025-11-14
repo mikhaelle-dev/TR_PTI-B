@@ -70,7 +70,7 @@ body {
 /* ===== HERO SECTION ===== */
 .hero {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
