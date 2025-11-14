@@ -134,7 +134,7 @@ html,body {
 
 body {
     background: #000000;
-    color: #222;
+    color: #ffd500;
 }
 
 .venue-section {
@@ -152,18 +152,18 @@ body {
 }
 
 .venue-card {
-    background: #fff;
+    background: #1e1d1d;
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 25px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px white;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .venue-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 25px #f1d445;
 }
 
 .venue-card img {
@@ -179,7 +179,7 @@ body {
 
 .venue-card p {
     margin: 10px 0 20px;
-    color: #555;
+    color: #fffbfb;
     font-size: 0.95rem;
 }
 
