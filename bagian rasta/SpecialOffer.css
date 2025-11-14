@@ -1,0 +1,147 @@
+/* ---------------- NAVBAR ---------------- */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: white;
+}
+
+.navbar {
+    width: 100%;
+    background: black;
+    color: #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #d4af37;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+.logo span {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #d4af37;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+.book-btn {
+    padding: 10px 18px;
+    background: #d4af37;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* ---------------- OFFER GRID ---------------- */
+
+.offer-grid {
+    margin-top: 120px;
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 25px;
+}
+
+.offer-card {
+    background: #111;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.offer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #d4af37;
+}
+
+.offer-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.offer-card h3 {
+    color: #d4af37;
+    margin: 15px 0 10px;
+}
+
+.offer-card p {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.offer-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: #d4af37;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.offer-btn:hover {
+    background: white;
+    color: black;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: black;
+    border-top: 1px solid #d4af37;
+    padding: 40px 60px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.footer h3 span {
+    color: white;
+}
+
+.footer h4 {
+    color: #d4af37;
+}
+
+.footer p {
+    margin: 5px 0;
+}
