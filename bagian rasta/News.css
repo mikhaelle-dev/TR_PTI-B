@@ -87,8 +87,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .blog-card img {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
 }
 .blog-card h3 {
     font-size: 1.8rem;
@@ -117,31 +119,27 @@ body {
     color: white;
 }
 
-/* Footer Contact in Card */
-.contact-footer-card {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-top: 30px;
-  color: #ccc;
-  font-size: 1rem;
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
 }
 
-.contact-footer-card .or-text {
-  color: #555;
-  font-style: italic;
+.read-more:hover {
+    background: #d4af37;
+    color: black;
+    box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
+    transform: translateY(-3px);
 }
 
-.contact-sales-link {
-  color: #e65a00;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.contact-sales-link:hover {
-  color: white;
-}
 
 /* ===== FOOTER ===== */
 .footer {

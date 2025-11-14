@@ -133,37 +133,75 @@ body {
     color: black;
 }
 
-/* =============================
-   FOOTER
-============================= */
-
+/* ===== FOOTER ===== */
 .footer {
-    background: black;
-    padding: 50px 80px;
-    border-top: 2px solid #d4af37;
-    margin-top: 50px;
+    background-color: #111;
+    padding: 50px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-}
-
-.footer-logo h3 {
-    font-size: 26px;
-}
-
-.footer-logo span {
+    justify-content: space-between;
+    gap: 40px;
     color: #d4af37;
 }
 
-.footer-content h4 {
+.footer-logo h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    color: white;
+}
+
+.footer p, .footer h4 {
+    color: #ccc;
+}
+
+.footer h4 {
     color: #d4af37;
     margin-bottom: 10px;
 }
 
-.footer-content p {
-    opacity: 0.9;
-    line-height: 1.6;
+
+
+
+/* Modal awalnya hidden */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ketika di-target (:target) tampil */
+.modal:target {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #333;
 }
