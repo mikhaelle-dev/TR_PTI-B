@@ -177,3 +177,34 @@ body {
         padding: 10px 22px;
         font-size: 0.9rem;
     }
+
+    .footer {
+    background-color: #111;
+    padding: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    color: #d4af37;
+}
+
+.footer-logo h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    color: white;
+}
+
+.footer p, .footer h4 {
+    color: #ccc;
+}
+
+.footer h4 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
