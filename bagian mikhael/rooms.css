@@ -14,35 +14,57 @@ body {
 
 /* ===== NAVBAR ===== */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 40px;
-  background: rgba(0, 0, 0, 0.992);
-  backdrop-filter: blur(8px);
-  z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 45px;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
 }
 
-nav ul li a {
-  color: #d4af37;
-  text-decoration: none;
-  font-size: 20px;
-  transition: color 0.3s;
+.logo span {
+    color: white;
 }
 
-nav ul li a:hover {
-  color: #fff;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.book-btn {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: #111;
 }
 
 /*FOTO*/
@@ -94,4 +116,35 @@ nav ul li a:hover {
   max-width: 900px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+.footer {
+    background-color: #111;
+    padding: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    color: #d4af37;
+}
+
+.footer-logo h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    color: white;
+}
+
+.footer p, .footer h4 {
+    color: #ccc;
+}
+
+.footer h4 {
+    color: #d4af37;
+    margin-bottom: 10px;
 }
