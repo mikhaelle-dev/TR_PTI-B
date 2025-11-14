@@ -3,12 +3,12 @@
             padding: 0;
             height: 100%;
             font-family: "Poppins", sans-serif;
-            color: whitesmoke;
+            color: rgb(0, 0, 0);
         }
 
         .photo-bg {
             position: relative;
-            background-image: url(https://i.pinimg.com/1200x/4c/f9/2d/4cf92d4b12c5703d3d31d8825c223019.jpg);
+            background-image: url(https://i.pinimg.com/1200x/8c/57/4f/8c574f82195c6f44f6cd4dd618666fe6.jpg);
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -56,3 +56,124 @@
         .overlay-text a:hover {
             color: orangered;
         }
+
+        .btn {
+            display: inline-block;
+            background-color: #0f62fe;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn.hover {
+            background: #084bcc;
+        }
+  
+        .venue-card{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #222;
+}
+
+.venue-section {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.venue-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.venue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.venue-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.venue-card h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.venue-card p {
+    margin: 10px 0 20px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.btn {
+    padding: 12px 28px;
+    background: #db5b00;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #a94500;
+}
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .venue-card img {
+        height: 240px;
+    }
+
+    .venue-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .venue-card {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .venue-card img {
+        height: 200px;
+    }
+
+    .venue-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .venue-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 10px 22px;
+        font-size: 0.9rem;
+    }
