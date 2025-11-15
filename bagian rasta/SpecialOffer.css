@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #111;
+    background-color: #000000;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -41,7 +41,7 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 .navbar a {

@@ -1,4 +1,4 @@
-/* ===== RESET DAN DASAR ===== */
+/*  DASAR  */
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +12,13 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR  */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #111;
+    background-color: #000000;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,7 +37,7 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 .navbar a {
@@ -67,7 +67,7 @@ body {
     color: #111;
 }
 
-/* ===== NEWS SECTION ===== */
+/*  NEWS SECTION */
 .news-section {
     padding: 50px;
     max-width: 1200px;
@@ -143,7 +143,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-    background-color: #111;
+    background-color: #000000;
     padding: 50px;
 }
 
