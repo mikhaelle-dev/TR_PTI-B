@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #111;
     color: #d4af37; /* Gold color */
     font-family: 'Georgia', serif;
 }
@@ -152,9 +152,7 @@ body {
     text-decoration: none;
 }
 
-.reserve-btn:hover {
-    background-color: white;
-}
+
 
 .reserve-btn:visited {
     color: black; 
@@ -162,7 +160,7 @@ body {
 
 /* ===== MENU SECTION (TABS CSS HACK) ===== */
 .menu-section {
-  background: #0f0f0f;
+    background-color: #111;
   padding: 100px 10%;
   text-align: center;
 }

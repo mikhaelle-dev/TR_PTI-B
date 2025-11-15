@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #0d0d0d;
+  background-color: #111;
   color: #f5f5f5;
   overflow-x: hidden;
 }
@@ -85,7 +85,7 @@ body {
 
 /* JUDUL DESK  */
 .room-section {
-  background-color: #121212;
+  background-color: #111;
   padding: 120px 5%;
   text-align: center;
   color: #d4af37;
@@ -211,7 +211,7 @@ body {
 .venue-section {
   text-align: center;
   padding: 80px 10%;
-  background-color: #0b0b0b;
+  background-color: #111;
 }
 
 .venue-section h1 {
@@ -312,7 +312,7 @@ body {
 .location-section {
   text-align: center;
   padding: 80px 10%;
-  background-color: #131313;
+  background-color: #111;
 }
 
 .location-section h1 {
@@ -404,7 +404,7 @@ body {
 
 .gallery-section {
     padding: 60px 0px;
-    background: #000000;
+    background-color: #111;
     text-align: center;
 }
 
@@ -511,9 +511,9 @@ body {
 
 
 
-/* ===== MENU SECTION (TABS CSS HACK) ===== */
+/* BAGIAN FOTO RESTO */
 .menu-section {
-  background: #0f0f0f;
+  background-color: #111;
   padding: 100px 10%;
   text-align: center;
 }
@@ -584,19 +584,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 .footer {
-    background-color: #111;
+    background-color: #000000;
     padding: 50px;
 }
 
@@ -608,61 +598,6 @@ body {
     color: #d4af37;
 }
 
-.footer-logo h3 {
-    color: #d4af37;
-    font-size: 1.5rem;
-}
-
-.footer-logo span {
-    color: white;
-}
-
-.footer p, .footer h4 {
-    color: #ccc;
-}
-
-.footer h4 {
-    color: #d4af37;
-    margin-bottom: 10px;
-}
 
 
 
-
-/* Modal awalnya hidden */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  align-items: center;
-  justify-content: center;
-}
-
-/* Ketika di-target (:target) tampil */
-.modal:target {
-  display: flex;
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #333;
-}
