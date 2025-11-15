@@ -9,8 +9,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -97,7 +95,7 @@ body {
         .photo-bg h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
-            color: whitesmoke;
+            color: #d4af37;
         }
 
         .photo-bg p {
@@ -168,7 +166,7 @@ body {
 
 .venue-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px #f1d445;
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
 }
 
 .venue-card img {
