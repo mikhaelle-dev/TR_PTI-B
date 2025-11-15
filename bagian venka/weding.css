@@ -73,13 +73,25 @@ body {
 .layartengah {
   margin-top: 120px; /* dorong kebawah dari navbar */
   text-align: center;
-  color: #d4af37;
   font-size: 1.5rem;
   margin-top: 200px;
+<<<<<<< HEAD
   
   
+=======
+  z-index: 1;
+>>>>>>> dd04d8bf55045bf8e0b3eccdca9c6f1137c23242
 }
 
+.layartengah h1 {
+    font-size: 3rem;
+    color: #d4af37;
+}
+
+.layartengah p {
+    color: white;
+    margin-top: 10px;
+}
 
 
 /* container tetap fixed di seluruh viewport, di belakang konten */
