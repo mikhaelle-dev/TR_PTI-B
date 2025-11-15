@@ -68,50 +68,58 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
-.hero {
-  position: relative;
-  height: 80vh; /* tinggi section */
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+
+.layartengah {
+  margin-top: 120px; /* dorong kebawah dari navbar */
   text-align: center;
-}
-.video-background {
-  position: fixed; /* fixed supaya full layar walau scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1; /* biar di belakang semua konten */
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-top: 200px;
+  z-index: 1;
+  
 }
 
+
+
+/* container tetap fixed di seluruh viewport, di belakang konten */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    overflow: hidden;
+    z-index: -2;
+}
+
+/* teknik cover: pastikan iframe menutupi area tanpa merusak rasio */
 .video-background iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;     /* full width viewport */
-  height: 100vh;    /* full height viewport */
-  min-width: 177.78vh; /* pastikan rasio 16:9 tetap terjaga */
-  min-height: 100vh;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    object-fit: cover;
 }
 
 
 
 .overlay {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+  width: 160%;
+  height: 160%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.53);
+  z-index: -1;
 }
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 0;
 }
 
 .hero h1 {
@@ -130,6 +138,7 @@ body {
 .experience {
   text-align: center;
   padding: 80px 20px;
+  padding-top: 500px;
 }
 
 .experience h2 {

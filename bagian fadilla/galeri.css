@@ -94,26 +94,19 @@ body {
         }
 
         .photo-bg h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-            color: whitesmoke;
-        }
-
-        .photo-bg p {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
+            font-size: 4rem;
+            margin-bottom: 0.6rem;
+            color: #d4af37;
         }
 
         .overlay-text a {
             color: whitesmoke;
             text-decoration: none;
             transition: color 0.3s;
-            font-weight: 500;
+            font-size: 1rem;
+            
         }
 
-        .overlay-text a:hover {
-            color: orangered;
-        }
 
 .gallery-section {
     padding: 60px 40px;

@@ -77,7 +77,8 @@ body {
 .hero {
   position: relative;
   height: 110svh;
-  background: url('https://i.pinimg.com/1200x/7f/5a/ab/7f5aabb22215e472902269f157a2f4a4.jpg') center/100% auto no-repeat;
+  background: url('https://i.pinimg.com/1200x/7f/5a/ab/7f5aabb22215e472902269f157a2f4a4.jpg')
+    center/100% auto no-repeat;
   background-color: #000;
 }
 
@@ -140,7 +141,7 @@ body {
   display: flex;
   background: linear-gradient(135deg, #0a0a0a, #151515);
   border: 1px solid #d4af3730;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
   border-radius: 14px;
   overflow: hidden;
   transition: 0.3s ease;
@@ -148,7 +149,7 @@ body {
 
 .room-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(212,175,55,0.25);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.25);
 }
 
 /* IMAGE */
