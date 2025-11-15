@@ -71,6 +71,7 @@ body {
 .hero {
   position: relative;
   height: 80vh; /* tinggi section */
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -149,15 +150,21 @@ body {
   background-color: #d4af37;
   color: #000;
   border: none;
-  padding: 12px 30px;
+  padding: 12px 10px;
   font-size: 1rem;
+  font-family: 'Georgia', serif;
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .reserve-btn:hover {
   background-color: white;
+}
+
+.reserve-btn:visited {
+    color: black; 
 }
 
 /* ===== WEDDING PACKAGES SECTION ===== */
@@ -170,14 +177,6 @@ body {
     align-items: center;
 }
 
-.wedding-packages h2 {
-  text-align: center;
-    padding: 80px 20px;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* Package Card */
 .package-card {

@@ -1,10 +1,119 @@
-        html,body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: "Poppins", sans-serif;
-            color: rgb(0, 0, 0);
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color: rgb(0, 0, 0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.logo span {
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.book-btn {
+  background-color: #d4af37;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: white;
+  color: #111;
+}.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.logo span {
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+.book-btn {
+    background-color: #d4af37;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background-color: white;
+    color: #111;
+}
 
         .photo-bg {
             position: relative;
@@ -80,7 +189,7 @@
 
 body {
     background: #000000;
-    color: #222;
+    color: #ffd500;
 }
 
 .venue-section {
@@ -98,18 +207,18 @@ body {
 }
 
 .venue-card {
-    background: #fff;
+    background: #1e1d1d;
     border-radius: 20px;
     overflow: hidden;
     padding-bottom: 25px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 25px white;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .venue-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 25px #f1d445;
 }
 
 .venue-card img {
@@ -125,7 +234,7 @@ body {
 
 .venue-card p {
     margin: 10px 0 20px;
-    color: #555;
+    color: #fffbfb;
     font-size: 0.95rem;
 }
 
@@ -177,3 +286,34 @@ body {
         padding: 10px 22px;
         font-size: 0.9rem;
     }
+
+    .footer {
+    background-color: #111;
+    padding: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    color: #d4af37;
+}
+
+.footer-logo h3 {
+    color: #d4af37;
+    font-size: 1.5rem;
+}
+
+.footer-logo span {
+    color: white;
+}
+
+.footer p, .footer h4 {
+    color: #ccc;
+}
+
+.footer h4 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
