@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background-color: #111;
+  background-color: #000000;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -36,7 +36,7 @@ body {
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 40px;
 }
 
 .navbar a {
@@ -76,7 +76,7 @@ body {
   color: #d4af37;
   font-size: 1.5rem;
   margin-top: 200px;
-  z-index: 1;
+  
   
 }
 
@@ -91,6 +91,7 @@ body {
     height: 110%;
     overflow: hidden;
     z-index: -2;
+    
 }
 
 /* teknik cover: pastikan iframe menutupi area tanpa merusak rasio */
@@ -103,6 +104,7 @@ body {
     transform: translate(-50%, -50%);
     pointer-events: none;
     object-fit: cover;
+    
 }
 
 
@@ -120,6 +122,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 0;
+  
 }
 
 .hero h1 {
@@ -139,6 +142,8 @@ body {
   text-align: center;
   padding: 80px 20px;
   padding-top: 500px;
+  
+  
 }
 
 .experience h2 {
@@ -298,7 +303,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer {
-  background-color: #111;
+  background-color: #000000;
   padding: 50px;
 }
 
