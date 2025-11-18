@@ -1,18 +1,17 @@
-/*  DASAR  */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #0d0d0d;
-  color: #f5f5f5;
-  overflow-x: hidden;
+    background: #111;
+    color: #fff;
+    font-family: 'Georgia', serif;
 }
 
-/* NAVBAR  */
+/* NAVBAR */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -67,149 +66,163 @@ body {
     color: #111;
 }
 
-/*  NEWS SECTION */
-.news-section {
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-}
-.news-section h2 {
+        .photo-bg {
+            position: relative;
+            background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/22/ad/cd/wahid-prime-hotel-salatiga.jpg?w=1200&h=-1&s=1);
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .photo-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .overlay-text {
+            position: relative;
+            z-index: 1;
+        }
+
+        .photo-bg h1 {
+            font-size: 4rem;
+            margin-bottom: 0.6rem;
+            color: #d4af37;
+        }
+
+        .overlay-text a {
+            color: whitesmoke;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 1rem;
+            
+        }
+
+
+.gallery-section {
+    padding: 60px 40px;
+    background-color: #111;
+    
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #d4af37;
-}
-.blog-card {
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.blog-card img {
-    width: 80%;
-    height: 50%;
-    object-fit: cover;
-    display: block;
-}
-.blog-card h3 {
-    font-size: 1.8rem;
-    margin: 20px;
-    color: #d4af37;
-}
-.blog-card .date {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin: 0 20px 10px 20px;
-}
-.blog-card p {
-    font-size: 1rem;
-    margin: 0 20px 20px 20px;
-    line-height: 1.6;
-}
-.read-more {
-    display: inline-block;
-    margin: 0 20px 20px 20px;
-    color: #d4af37;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.read-more:hover {
-    color: white;
-}
-
-.read-more {
-    display: inline-block;
-    padding: 10px 20px;
-    background: black;
-    color: #d4af37;
-    border: 2px solid #d4af37;
-    border-radius: 30px;
-    font-size: 15px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    letter-spacing: 1px;
-}
-
-.read-more:hover {
-    background: #d4af37;
-    color: black;
-    box-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37;
-    transform: translateY(-3px);
 }
 
 
-/* ===== FOOTER ===== */
-.footer {
-    background-color: #000000;
-    padding: 50px;
+/* ===== BLOG / NEWS GRID ===== */
+.blog-container {
+  max-width: 1180px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  display: grid;
+  grid-template-columns: 320px 1fr 320px; /* left offer, center list, right optional */
+  gap: 28px;
+  align-items: start;
 }
 
-.footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    color: #d4af37;
+/* Left — offer / highlight card */
+.offer-card {
+  background: linear-gradient(180deg, rgba(13,13,13,0.9), #0f0f0f);
+  border: 1px solid rgba(212,175,55,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 18px;
 }
-
-.footer-logo h3 {
-    color: #d4af37;
-    font-size: 1.5rem;
-}
-
-.footer-logo span {
-    color: white;
-}
-
-.footer p, .footer h4 {
-    color: #ccc;
-}
-
-.footer h4 {
-    color: #d4af37;
-    margin-bottom: 10px;
-}
-
-
-
-
-/* Modal awalnya hidden */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
+.offer-card img {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  align-items: center;
-  justify-content: center;
+  height: 170px;
+  object-fit: cover;
+  display: block;
 }
-
-/* Ketika di-target (:target) tampil */
-.modal:target {
-  display: flex;
+.offer-card h3 {
+  color: #d4af37;
+  font-size: 1.15rem;
+  margin: 14px 16px 6px;
 }
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
-  position: relative;
+.offer-card .date {
+  display: inline-block;
+  color: #cfcfcf;
+  font-size: 0.50rem;
+  margin-bottom: 6px;
 }
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
+.offer-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0 16px 12px;
+}
+.offer-card .offer-btn {
+  display: inline-block;
+  margin: 8px 0 0;
+  padding: 10px 16px;
+  border-radius: 8px;
   text-decoration: none;
-  font-size: 24px;
-  color: #333;
+  background: #d4af37;
+  color: #111;
+  font-weight: 700;
 }
+
+.offer-card .read-more {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* Center — list of blog articles */
+.center-column {
+  display: grid;
+  gap: 20px;
+}
+
+/* Right — related / archive / social (optional) */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.right-column .widget {
+  background: #0e0e0e;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+.widget h4 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+.widget p, .widget a {
+  color: #ddd;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+/* ===== FOOTER ===== (mirip resto footer) */
+.footer {
+  background-color: #000;
+  padding: 44px 6%;
+  margin-top: 30px;
+  border-top: 1px solid rgba(212,175,55,0.04);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  color: #d4af37;
+  flex-wrap: wrap;
+}
+.footer-logo h3 { color: #d4af37; }
+.footer-logo span { color: #fff; }
+.footer p, .footer h4 { color: #cfcfcf; }
+
+/* small utilities */
+.center { text-align: center; }
+.small { font-size: 0.86rem; color: #bfbfbf; }
