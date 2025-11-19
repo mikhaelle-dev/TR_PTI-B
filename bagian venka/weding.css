@@ -1,4 +1,3 @@
-/* ===== GLOBAL RESET ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +6,10 @@
 
 body {
   background-color: #000;
-  color: #d4af37; /* Gold */
+  color: #d4af37; 
   font-family: 'Georgia', serif;
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -67,33 +65,23 @@ body {
   color: #111;
 }
 
-/* ===== HERO SECTION ===== */
-
-
 .layartengah {
-  margin-top: 120px; /* dorong kebawah dari navbar */
+  margin-top: 120px; 
   text-align: center;
-  font-size: 1.5rem;
   margin-top: 200px;
-
-  
-  
   z-index: 1;
-
 }
 
 .layartengah h1 {
-    font-size: 3rem;
-    color: #d4af37;
+  font-size: 4rem;
+  color: #d4af37;
 }
 
 .layartengah p {
-    color: white;
-    margin-top: 10px;
+  color: white;
+  margin-top: 10px;
 }
 
-
-/* container tetap fixed di seluruh viewport, di belakang konten */
 .video-background {
     position: absolute;
     top: 0;
@@ -105,7 +93,6 @@ body {
     
 }
 
-/* teknik cover: pastikan iframe menutupi area tanpa merusak rasio */
 .video-background iframe {
     position: absolute;
     top: 50%;
@@ -117,8 +104,6 @@ body {
     object-fit: cover;
     
 }
-
-
 
 .overlay {
   position: absolute;
@@ -148,7 +133,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* ===== EXPERIENCE / INTRO SECTION ===== */
 .experience {
   text-align: center;
   padding: 80px 20px;
@@ -190,7 +174,6 @@ body {
     color: black; 
 }
 
-/* ===== WEDDING PACKAGES SECTION ===== */
 .wedding-packages {
     text-align: center;
     padding: 80px 20px;
@@ -201,17 +184,16 @@ body {
 }
 
 
-/* Package Card */
 .package-card {
     background-color: #111;
     border: 1px solid #333;
-    max-width: 900px;      /* <=== ini bikin lebih ramping */
+    max-width: 900px;      
     margin: 40px auto;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
-    box-shadow: 0 0 20px rgba(23, 23, 23, 0.3); /* opsional, biar lebih elegan */
+    box-shadow: 0 0 20px rgba(23, 23, 23, 0.3); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
@@ -242,7 +224,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Info Row (Price, Pax, Venue) */
 .info-row {
   display: flex;
   gap: 30px;
@@ -265,11 +246,10 @@ body {
 }
 
 .info-value {
-  font-weight: normal; /* Hilangkan bold pada nilai */
-  color: white; /* Biar tetap kontras */
+  font-weight: normal; 
+  color: white; 
 }
 
-/* Benefits List */
 .package-details h4 {
   color: #d4af37;
   margin-bottom: 10px;
@@ -289,7 +269,6 @@ body {
   padding: 3px 0;
 }
 
-/* Footer Contact in Card */
 .contact-footer-card {
   display: flex;
   align-items: center;
@@ -315,7 +294,6 @@ body {
   color: white;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   background-color: #000000;
   padding: 50px;
@@ -348,7 +326,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
   .package-card {
     flex-direction: column;
@@ -377,6 +354,6 @@ body {
   }
 
   .navbar ul {
-    display: none; /* Hide nav on mobile */
+    display: none; 
   }
 }
