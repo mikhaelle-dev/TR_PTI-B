@@ -49,7 +49,7 @@ body {
   color: white;
 }
 
-.book-btn {
+.book-button {
   background-color: #d4af37;
   color: black;
   border: none;
@@ -60,7 +60,7 @@ body {
   transition: 0.3s;
 }
 
-.book-btn:hover {
+.book-button:hover {
   background-color: white;
   color: #111;
 }
@@ -152,7 +152,7 @@ body {
   line-height: 1.8;
 }
 
-.reserve-btn {
+.contacts-button {
   margin-top: 30px;
   background-color: #d4af37;
   color: #000;
@@ -166,11 +166,11 @@ body {
   text-decoration: none;
 }
 
-.reserve-btn:hover {
+.contacts-button:hover {
   background-color: white;
 }
 
-.reserve-btn:visited {
+.contacts-button:visited {
     color: black; 
 }
 
