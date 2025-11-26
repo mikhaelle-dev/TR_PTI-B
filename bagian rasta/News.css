@@ -10,7 +10,6 @@ body {
     font-family: 'Georgia', serif;
 }
 
-/* NAVBAR */
 
 .navbar {
     display: flex;
@@ -118,7 +117,7 @@ body {
 }
 
 
-/* ===== BLOG / NEWS GRID ===== */
+
 .blog-container {
   max-width: 1180px;
   margin: 40px auto;
@@ -129,7 +128,7 @@ body {
   align-items: start;
 }
 
-/* Left — offer / highlight card */
+
 .offer-card {
   background: linear-gradient(180deg, rgba(13,13,13,0.9), #0f0f0f);
   border: 1px solid rgba(212,175,55,0.08);
@@ -177,13 +176,13 @@ body {
   font-size: 0.85rem;
 }
 
-/* Center — list of blog articles */
+
 .center-column {
   display: grid;
   gap: 20px;
 }
 
-/* Right — related / archive / social (optional) */
+
 .right-column {
   display: flex;
   flex-direction: column;
@@ -205,7 +204,7 @@ body {
   text-decoration: none;
 }
 
-/* ===== FOOTER ===== (mirip resto footer) */
+
 .footer {
   background-color: #000;
   padding: 44px 6%;
@@ -223,6 +222,6 @@ body {
 .footer-logo span { color: #fff; }
 .footer p, .footer h4 { color: #cfcfcf; }
 
-/* small utilities */
+
 .center { text-align: center; }
 .small { font-size: 0.86rem; color: #bfbfbf; }
