@@ -10,7 +10,7 @@ body {
     font-family: 'Georgia', serif;
 }
 
-/* NAVBAR */
+
 
 .navbar {
     display: flex;
@@ -117,7 +117,7 @@ body {
     text-align: center;
 }
 
-/* OFFER SECTION */
+
 
 .offer-grid {
     width: 100%;
@@ -174,7 +174,7 @@ body {
     color: black;
 }
 
-/* ===== FOOTER ===== */
+
 .footer {
     background-color: #111;
     padding: 50px;
@@ -209,7 +209,6 @@ body {
 
 
 
-/* Modal awalnya hidden */
 .modal {
   display: none;
   position: fixed;
@@ -223,7 +222,7 @@ body {
   justify-content: center;
 }
 
-/* Ketika di-target (:target) tampil */
+
 .modal:target {
   display: flex;
 }
