@@ -1,4 +1,3 @@
-/* DASAR */
 * {
   margin: 0;
   padding: 0;
@@ -7,27 +6,23 @@
 
 body {
   font-family: 'Georgia', serif;
-    background-color: #111;
-  color: #f5f5f5;
-  overflow-x: hidden;
+  background-color: #111;
 }
 
-/* 
-   NAVBAR
- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-    background-color: #000000;
+  padding: 22px 50px;
+  background-color: #000000;
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 80px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #d4af37;
 }
@@ -49,7 +44,8 @@ body {
   transition: 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar .active-nav {
   color: white;
 }
 
@@ -67,6 +63,61 @@ body {
 .book-btn:hover {
   background-color: white;
   color: #111;
+}
+
+.user-menu {
+    position: relative;
+}
+
+#toggleUser {
+    display: none;   /* sembunyikan checkbox */
+}
+
+.user-icon {
+    color: #d4af37;
+    font-size: 28px;
+    transition: 0.3s ease;
+}
+
+.user-icon:hover i {
+    color: #ffffff;   /* warna saat cursor menyentuh (hover) */
+    cursor: pointer;
+}
+
+/* Dropdown (disembunyikan dulu) */
+.user-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: #000;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: none;
+    flex-direction: column;
+}
+
+/* Tampilkan ketika checkbox dicentang */
+#toggleUser:checked + .user-icon + .user-dropdown {
+    display: flex;
+}
+
+.user-dropdown a {
+    color: #d4af37;
+    padding: 6px 0;
+    margin-bottom: 6px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.user-dropdown a:last-child {
+    margin-bottom: 0;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Jarak antara Book Now dan ikon user */
 }
 
 /* =======================================================
@@ -241,37 +292,103 @@ body {
   }
 }
 
-/* =======================================================
-   FOOTER
-======================================================= */
+/*  FOOTER  */
 .footer {
-  background-color: #000000;
-  padding: 50px;
+    background: #0c0c0c;
+    padding: 30px 60px 20px;
+    color: #d4af37;
+    font-family: 'Georgia', serif;
 }
 
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-  color: #d4af37;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;  /* <- ini yang membetulkan */
 }
 
-.footer-logo h3 {
-  color: #d4af37;
-  font-size: 1.5rem;
+.footer-section {
+    max-width: 250px;
+    
 }
 
-.footer-logo span {
-  color: white;
+.footer-title {
+    font-size: 1.7rem;
+    color: #d4af37;
+    font-weight: bold;
 }
 
-.footer p,
-.footer h4 {
-  color: #ccc;
+.footer-title span {
+    color: white;
 }
 
-.footer h4 {
-  color: #d4af37;
-  margin-bottom: 10px;
+.footer-desc {
+    margin: 15px 0;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-left: 10px;
+}
+
+.footer-socials a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #1b1b1b;
+    color: #d4af37;
+    font-size: 18px;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+.footer-socials a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer-socials a:hover {
+    background: #d4af37;
+    color: #111;
+}
+
+/* Headings */
+.footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+/* Links */
+.footer-section a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+/* Bottom text */
+.footer-bottom {
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #aaa;
 }

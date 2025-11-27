@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Heaven Prime Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="resto.css">
 </head>
 <body>
@@ -21,10 +22,23 @@
             <li><a href="resto.html">Restaurant</a></li>
         </ul>
     </nav>
-
+<div class="right-side">
   <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">
   <button class="book-btn">Book Now</button> </a>
 
+  <div class="user-menu">
+    <input type="checkbox" id="toggleUser" />
+    <label for="toggleUser" class="user-icon">
+        <i class="fa-solid fa-user"></i>
+    </label>
+
+    <div class="user-dropdown">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+  </div>
+  </div>
+</nav>
 </header>
 
 <section class="hero">
@@ -81,7 +95,7 @@
       </div>
 
       <div class="menu-card">
-        <img src="https://cakevibe.com/wp-content/uploads/2025/07/generate_a_high-resolution_photorealistic_image_of_a_decadent_chocolate_lava_cake_served_on_a_elega_awe15coywc2ri8qv2sm6_0-1-800x768.png" alt="Dessert">
+        <img src="https://i.pinimg.com/736x/38/6c/e0/386ce0691d979867a8bdfe781cf67743.jpg" alt="Dessert">
         <h3>Chocolate Lava Cake</h3>
         <p>Warm, decadent chocolate cake with a molten center and vanilla ice cream.</p>
       </div>
@@ -217,27 +231,56 @@
   </div>
 </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h3>Heaven <span>Prime</span></h3>
-        <p>Jl. Kemiri No.123, Salatiga, Indonesia</p>
-      </div>
+<footer class="footer">
+    <div class="footer-container">
 
-      <div>
-        <h4>Contact</h4>
-        <p>Phone: (0287) 4539211</p>
-        <p>Email: info@heavenprimehotel.com</p>
-      </div>
+        <!-- Brand -->
+        <div class="footer-section">
+            <h2 class="footer-title">Heaven <span>Prime</span></h2>
+            <p class="footer-desc">
+                Experience luxury, comfort, and unforgettable hospitality.  
+                Your perfect stay awaits.
+            </p>
 
-      <div class="footer-social">
-        <h4>Follow Our Social Media:</h4>
-        <p>Instagram: heavenprimehotel.id</p>
-        <p>TikTok: heavenprimehotel.id</p>
-        <p>Facebook: heavenprimehotel</p>
-      </div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/?flo=true"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/?lang=en-id"><i class="fab fa-twitter"></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-section">
+            <h3 class="footer-heading">Explore</h3>
+            <a href="rooms.html">Rooms & Suites</a>
+            <a href="resto.html">Dining</a>
+            <a href="events.html">Events</a>
+            <a href="home.html">Facilities</a>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-section">
+            <h3 class="footer-heading">Support</h3>
+            <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">Contact Us</a>
+            <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">FAQs</a>
+            <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">Reservation Help</a>
+            <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">Customer Service</a>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-section">
+            <h3 class="footer-heading">Legal</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Hotel Policy</a>
+        </div>
+
     </div>
-  </footer>
+
+    <p class="footer-bottom">© 2025 HeavenPrime Hotel. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
