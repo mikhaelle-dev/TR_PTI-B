@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    background: #000;
+    font-family: 'Georgia', serif;
+    color: #d4af37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.page-login{
+    padding: 30px;
+}
+
+.page-register{
+    padding: 120px;
+}
+
+/* Hapus garis kecil di atas */
+.login-wrapper::before {
+    display: none;
+}
+
+/* Shading baru */
+.login-wrapper {
+    background: #0d0d0d;
+    border: 1px solid #d4af37;
+    padding: 45px;
+    width: 430px;
+    border-radius: 18px;
+
+    /* SHADOW / GLOW ELEGAN */
+    box-shadow:
+        0 0 45px rgba(212, 175, 55, 0.4),
+        0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/*
+   === LOGO HEAVEN PRIME ===
+*/
+.logo {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.logo .heaven {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.logo .prime {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #b8b8b8;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    background: #000;
+    border: 1px solid #d4af37;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/*
+   === CHECKBOX CUSTOM ===
+*/
+.checkbox-container {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 17px;
+    width: 17px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+}
+
+/* Saat dicentang */
+.checkbox-container input:checked ~ .checkmark {
+    background: #d4af37;
+}
+
+/* Tanda centang */
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark::after {
+    display: block;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.remember a:hover {
+    color: #fff !important;
+}
+
+.forgot {
+    color:#d4af37;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.btn-main {
+    background: #d4af37;
+    color: #131313;
+    padding: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover: background putih, teks jadi emas */
+.btn-main:hover {
+    background: #c9c9c9;
+    color: #121212; 
+}
+
+.divider {
+    margin: 28px 0 18px;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
+.social-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    background: transparent;
+    color: #d4af37;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    transition: .3s;
+    font-size: 14px;
+}
+
+.social-btn:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.signup {
+    text-align: center;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.signup a:hover {
+    color: #fff;
+}
