@@ -48,7 +48,7 @@ body {
     color: white;
 }
 
-.book-button {
+.book-btn {
     background-color: #d4af37;
     color: black;
     border: none;
@@ -59,7 +59,7 @@ body {
     transition: 0.3s;
 }
 
-.book-button:hover {
+.book-btn:hover {
     background-color: white;
     color: #111;
 }

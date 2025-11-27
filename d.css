@@ -1,0 +1,21 @@
+.wedding-hero {
+    background-color: #111;
+    padding: 100px 40px;
+    text-align: center;
+    font-family: 'Georgia', serif;
+}
+
+.wedding-hero h3 {
+    font-size: 36px;      /* DIKECILIN */
+    color: #d4af37;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.wedding-hero p {
+    font-size: 18px;      /* DIKECILIN */
+    line-height: 1.7;
+    max-width: 900px;     /* DIKECILIN supaya nggak melebar banget */
+    margin: 0 auto 40px;
+    color: #dcdcdc;
+}

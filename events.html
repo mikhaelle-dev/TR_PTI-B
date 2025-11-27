@@ -1,63 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heaven Prime Wedding</title>
-  <link rel="stylesheet" href="weding.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaven Prime Events</title>
+
+    <!-- Kamu bisa buat file css baru: event.css -->
+    <link rel="stylesheet" href="events.css">
 </head>
 
 <body>
 
+<!-- NAVBAR (sama di semua halaman) -->
 <header class="navbar">
-  <nav>
-    <ul>
-      <li>
-        <div class="logo">
-          <a href="home.html"><h2>Heaven <span>Prime</span></h2></a>
-        </div>
-      </li>
-      <li><a href="rooms.html">Rooms</a></li>
-      <li><a href="meet.html">Meeting & Event</a></li>
-      <li><a href="galeri.html">Gallery</a></li>
-      <li><a href="weding.html">Wedding</a></li>
-      <li><a href="resto.html">Restaurant</a></li>
-      <li><a href="SpecialOffer.html">Special Offer</a></li>
-      <li><a href="News.html">News</a></li>
-    </ul>
-  </nav>
+    <nav>
+        <ul>
+            <li>
+                <div class="logo">
+                    <a href="home.html"><h2>Heaven <span>Prime</span></h2></a>
+                </div>
+            </li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="galeri.html">Gallery</a></li>
+            <li><a href="resto.html">Restaurant</a></li>
+            <li><a href="SpecialOffer.html">Special Offer</a></li>
+            <li><a href="News.html">News</a></li>
+        </ul>
+    </nav>
 
-  <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">
-  <button class="book-btn">Book Now</button> </a>
-
+    <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo&type=phone_number&app_absent=0">
+        <button class="book-btn">Book Now</button>
+    </a>
 </header>
 
-  <div class="layartengah">
-      <h1>Wedding</h1>
-      <p>Heaven Prime Hotel Salatiga - Official Website / Wedding</p>
+<div class="photo-bg event-header">
+    <div class="overlay-text">
+        <h1>Events</h1>
+        <p>Heaven Prime Hotel Salatiga – Meeting • Wedding • Celebrations</p>
     </div>
-  </section>
-
-<div class="video-background" aria-hidden="true">
-  <iframe
-    src="https://www.youtube.com/embed/_6z5sHPg9y0?autoplay=1&mute=1&controls=0&loop=1&playlist=_6z5sHPg9y0&start=7&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3"
-    frameborder="0"
-    allow="autoplay; fullscreen"
-    allowfullscreen>
-  </iframe>
 </div>
 
-<div class="overlay"></div>
+<section class="venue-section">
+    <h1 class="section-title">Meeting Rooms</h1>
+    <p class="section-subtitle">Ideal for business meetings, seminars, and conferences.</p>
 
-  <section class="experience">
-    <h2>Your Perfect Day Starts Here</h2>
+    <div class="container event-grid">
+
+        <div class="venue-card">
+            <img src="https://i.pinimg.com/1200x/6e/52/d3/6e52d3c540638d70e7ebaa38bbf8959c.jpg">
+            <h3>Grand Ballroom</h3>
+            <p>Ideal for weddings & large corporate events</p>
+            <a href="#" class="btn">View Details →</a>
+        </div>
+
+        <div class="venue-card">
+            <img src="https://i.pinimg.com/1200x/c3/36/40/c33640f5eba3acb62a6b59225d7d3a44.jpg">
+            <h3>Outdoor Terrace</h3>
+            <p>Perfect for semi-formal or casual events</p>
+            <a href="#" class="btn">View Details →</a>
+        </div>
+
+        <div class="venue-card">
+            <img src="https://i.pinimg.com/736x/fe/f4/04/fef404d9252f35d3308687b7271d6e7f.jpg">
+            <h3>Rawa Pening Rooftop</h3>
+            <p>Meeting room with panoramic views</p>
+            <a href="#" class="btn">View Details →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="venue-section">
+    <h1 class="section-titles">Wedding</h1>
+</section>
+
+<section class="experience">
+    <h3>Your Perfect Day Starts Here</h3>
+
     <p>
-      Celebrate your love story in the perfect setting. Heaven Prime Hotel offers stunning venues,
-      exquisite catering, and dedicated service to make your dream wedding a reality.
-      Explore our exclusive wedding packages tailored for intimate gatherings and grand celebrations.
+        Celebrate your love story in the perfect setting. 
+        Heaven Prime Hotel offers stunning venues, exquisite catering, 
+        and dedicated service to make your dream wedding a reality. 
+        Explore our exclusive wedding packages tailored for intimate gatherings 
+        and grand celebrations.
     </p>
-    <button class="contacts-button"><a class="contacts-button href="https://api.whatsapp.com/send/?phone=%2B628236577345&text&type=phone_number&app_absent=0">Contact Wedding Sales</a></button>
-  </section>
+
+    <a href="#" class="contacts-button">Contact Wedding Sales</a>
+</section>
 
 <section class="wedding-packages">
     <h2>Our Exclusive Wedding Packages</h2>
@@ -199,27 +229,27 @@
 
   </section>
 
-  <footer class="footer">
+<footer class="footer">
     <div class="footer-content">
-      <div class="footer-logo">
-        <h3>Heaven <span>Prime</span></h3>
-        <p>Jl. Kemiri No.123, Salatiga, Indonesia</p>
-      </div>
+        <div class="footer-logo">
+            <h3>Heaven <span>Prime</span></h3>
+            <p>Jl. Kemiri No.123, Salatiga, Indonesia</p>
+        </div>
 
-      <div>
-        <h4>Contact</h4>
-        <p>Phone: (0287) 4539211</p>
-        <p>Email: info@heavenprimehotel.com</p>
-      </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Phone: (0287) 4539211</p>
+            <p>Email: info@heavenprimehotel.com</p>
+        </div>
 
-      <div class="footer-social">
-        <h4>Follow Our Social Media:</h4>
-        <p>Instagram: heavenprimehotel.id</p>
-        <p>TikTok: heavenprimehotel.id</p>
-        <p>Facebook: heavenprimehotel</p>
-      </div>
+        <div class="footer-social">
+            <h4>Follow Our Social Media:</h4>
+            <p>Instagram: heavenprimehotel.id</p>
+            <p>TikTok: heavenprimehotel.id</p>
+            <p>Facebook: heavenprimehotel</p>
+        </div>
     </div>
-  </footer>
+</footer>
 
 </body>
 </html>
