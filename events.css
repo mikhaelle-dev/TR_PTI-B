@@ -508,32 +508,218 @@ body {
     color: #aaa;
 }
 
+/*RESPONSIVE BREAKPOINT 992px*/
 @media (max-width: 992px) {
+
+  /* NAVBAR */
+  .navbar { padding: 18px 30px; }
+  .navbar ul { gap: 25px; }
+
+  /* HERO PHOTO */
+  .photo-bg { height: 75vh; }
+  .photo-bg h1 { font-size: 3rem; }
+
+  /* MEETING GRID */
   .event-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 
+  /* EXPERIENCE */
+  .experience h3 { font-size: 1.7rem; }
+  .experience p { font-size: 1rem; }
+
+  /* WEDDING PACKAGE CARD */
   .package-card {
     flex-direction: column;
-    text-align: center;
+    max-width: 700px;
   }
 
   .package-img img {
-    width: 100%;
+    height: 260px;
+  }
+
+  .info-row {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .benefits-list {
+    columns: 1;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    gap: 40px;
+    flex-wrap: wrap;
   }
 }
 
-@media (max-width: 600px) {
-  .event-grid {
-    grid-template-columns: 1fr;
+
+/*RESPONSIVE BREAKPOINT 768px*/
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: auto;
   }
 
   .navbar ul {
     gap: 15px;
   }
 
-  .navbar {
-    padding: 10px 20px;
+  .navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-size: 0.9rem;
+  }
+
+  .book-btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  .user-icon {
+    font-size: 24px;
+  }
+
+  /* HERO */
+  .photo-bg {
+    height: 60vh;
+    padding: 0 20px;
+  }
+
+  .photo-bg h1 {
+    font-size: 2.4rem;
+  }
+
+  /* MEETING GRID */
+  .event-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* EXPERIENCE */
+  .experience {
+    padding: 40px 25px;
+  }
+
+  .experience h3 {
+    font-size: 1.6rem;
+  }
+
+  .experience p {
+    font-size: 0.95rem;
+  }
+
+  /* WEDDING PACKAGE */
+  .package-card {
+    max-width: 95%;
+  }
+
+  .package-img img {
+    height: 220px;
+  }
+
+  .package-details {
+    padding: 20px;
+  }
+
+  .package-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
   }
 }
 
+/*RESPONSIVE BREAKPOINT 480px*/
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .navbar { padding: 12px 15px; }
+  .logo { font-size: 0.8rem; }
+  .navbar ul { gap: 10px; }
+  .navbar ul li a { font-size: 0.75rem; }
+
+  .book-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .user-icon {
+    font-size: 20px;
+  }
+
+  /* HERO */
+  .photo-bg {
+    height: 50vh;
+  }
+
+  .photo-bg h1 {
+    font-size: 2rem;
+  }
+
+  /* MEETING */
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* EXPERIENCE */
+  .experience h3 {
+    font-size: 1.4rem;
+  }
+
+  .experience p {
+    font-size: 0.9rem;
+  }
+
+  /* WEDDING PACKAGE */
+  .package-img img {
+    height: 180px;
+  }
+
+  .package-details h3 {
+    font-size: 1.3rem;
+  }
+
+  .benefits-list {
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+}

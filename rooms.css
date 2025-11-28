@@ -1,3 +1,5 @@
+/* FINAL RESPONSIVE FULL CSS (CLEAN + RESPONSIVE + NO DUPLICATES) */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +9,16 @@
 body {
   font-family: 'Georgia', serif;
   background-color: #111;
+  color: #d4af37;
 }
 
+/* ============================= NAVBAR ============================= */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 22px 50px;
-  background-color: #000000;
+  background-color: #000;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -65,69 +69,58 @@ body {
   color: #111;
 }
 
-.user-menu {
-    position: relative;
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-#toggleUser {
-    display: none;   /* sembunyikan checkbox */
-}
+.user-menu { position: relative; }
+
+#toggleUser { display: none; }
 
 .user-icon {
-    color: #d4af37;
-    font-size: 28px;
-    transition: 0.3s ease;
+  color: #d4af37;
+  font-size: 28px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.user-icon:hover i {
-    color: #ffffff;   /* warna saat cursor menyentuh (hover) */
-    cursor: pointer;
-}
+.user-icon:hover i { color: #fff; }
 
-/* Dropdown (disembunyikan dulu) */
 .user-dropdown {
-    position: absolute;
-    top: 45px;
-    right: 0;
-    background: #000;
-    border: 2px solid #d4af37;
-    border-radius: 12px;
-    padding: 10px 15px;
-    display: none;
-    flex-direction: column;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: #000;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 10px 15px;
+  display: none;
+  flex-direction: column;
 }
 
-/* Tampilkan ketika checkbox dicentang */
 #toggleUser:checked + .user-icon + .user-dropdown {
-    display: flex;
+  display: flex;
 }
 
 .user-dropdown a {
-    color: #d4af37;
-    padding: 6px 0;
-    margin-bottom: 6px;
-    text-decoration: none;
-    font-size: 18px;
+  color: #d4af37;
+  padding: 6px 0;
+  margin-bottom: 6px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .user-dropdown a:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.right-side {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Jarak antara Book Now dan ikon user */
-}
-
-/* =======================================================
-   HERO IMAGE
-======================================================= */
+/* ============================= HERO ============================= */
 .hero {
   position: relative;
   height: 110svh;
-  background: url('https://i.pinimg.com/1200x/7f/5a/ab/7f5aabb22215e472902269f157a2f4a4.jpg')
-    center/100% auto no-repeat;
+  background: url('https://i.pinimg.com/1200x/7f/5a/ab/7f5aabb22215e472902269f157a2f4a4.jpg') center/100% auto no-repeat;
   background-color: #000;
 }
 
@@ -138,17 +131,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.179);
+  background: rgba(0, 0, 0, 0.18);
 }
 
-/* =======================================================
-   ROOM SECTION
-======================================================= */
+/* ============================= ROOM SECTION ============================= */
 .room-section {
   background-color: #121212;
   padding: 120px 5%;
   text-align: center;
-  color: #d4af37;
 }
 
 .room-section h3 {
@@ -172,9 +162,7 @@ body {
   line-height: 1.6;
 }
 
-/* =======================================================
-   ROOM LIST (CONTAINER)
-======================================================= */
+/* ============================= ROOMS LIST ============================= */
 .rooms-list {
   width: 90%;
   margin: 40px auto;
@@ -183,31 +171,28 @@ body {
   gap: 40px;
 }
 
-/* =======================================================
-   ROOM CARD
-======================================================= */
+/* ============================= ROOM CARD ============================= */
 .room-card {
   display: flex;
   background: linear-gradient(135deg, #0a0a0a, #151515);
   border: 1px solid #d4af3730;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
   border-radius: 14px;
   overflow: hidden;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .room-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 12px 35px rgba(212,175,55,0.25);
 }
 
-/* IMAGE */
 .room-img {
   width: 50%;
   height: 320px;
   object-fit: cover;
   filter: brightness(0.9);
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .room-card:hover .room-img {
@@ -215,7 +200,6 @@ body {
   transform: scale(1.02);
 }
 
-/* INFO */
 .room-info {
   padding: 25px;
   width: 50%;
@@ -228,7 +212,7 @@ body {
 }
 
 .room-info p {
-  color: #cccccc;
+  color: #ccc;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -241,9 +225,6 @@ body {
   color: #f5f5f5a3;
 }
 
-/* 
-   BUTTONS
- */
 .btn {
   display: inline-block;
   background: #d4af37;
@@ -252,11 +233,11 @@ body {
   border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: white;
+  background: #fff;
   color: #000;
   box-shadow: 0 0 12px #d4af37;
 }
@@ -266,7 +247,7 @@ body {
   color: #d4af37;
   font-weight: bold;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .detail-link:hover {
@@ -274,41 +255,23 @@ body {
   text-shadow: 0 0 10px #d4af37;
 }
 
-/* =======================================================
-   RESPONSIVE
-======================================================= */
-@media (max-width: 768px) {
-  .room-card {
-    flex-direction: column;
-  }
-
-  .room-img,
-  .room-info {
-    width: 100%;
-  }
-
-  .room-section p {
-    width: 90%;
-  }
-}
-
-/*  FOOTER  */
+/* ============================= FOOTER ============================= */
 .footer {
-    background: #0c0c0c;
-    padding: 30px 60px 20px;
-    color: #d4af37;
-    font-family: 'Georgia', serif;
+  background: #0c0c0c;
+  padding: 30px 60px 20px;
+  color: #d4af37;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;  /* <- ini yang membetulkan */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .footer-section {
-    max-width: 250px;
-    
+  max-width: 250px;
 }
 
 .footer-title {
@@ -322,31 +285,27 @@ body {
 }
 
 .footer-desc {
-    margin: 15px 0;
-    color: #ddd;
-    line-height: 1.5;
+  margin: 15px 0;
+  color: #ddd;
+  line-height: 1.5;
 }
 
 .footer-socials {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-left: 10px;
+  display: flex;
+  gap: 15px;
 }
 
 .footer-socials a {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: #1b1b1b;
-    color: #d4af37;
-    font-size: 18px;
-    transition: 0.3s;
-    flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #1b1b1b;
+  color: #d4af37;
+  font-size: 20px;
+  transition: 0.3s;
 }
 
 .footer-socials a i {
@@ -359,36 +318,96 @@ body {
 }
 
 .footer-socials a:hover {
-    background: #d4af37;
-    color: #111;
+  background: #d4af37;
+  color: #111;
 }
 
-/* Headings */
 .footer-heading {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #d4af37;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
-/* Links */
 .footer-section a {
-    display: block;
-    margin-bottom: 10px;
-    color: #ccc;
-    text-decoration: none;
-    transition: 0.3s;
+  display: block;
+  margin-bottom: 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.footer-section a:hover {
-    color: white;
+.footer-section a:hover { 
+  color: white; 
 }
 
-/* Bottom text */
 .footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
+
+/* ============================= RESPONSIVE ============================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .navbar { padding: 18px 30px; }
+  .navbar ul { gap: 25px; }
+  .room-section h3 { font-size: 2.3em; }
+  .room-section h1 { font-size: 3em; }
+}
+
+/* MOBILE MEDIUM */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 18px;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: auto;
+  }
+
+  .navbar ul { gap: 15px; }
+  .navbar ul li a { font-size: 0.85rem; }
+  .logo { font-size: 0.9rem; }
+
+  .book-btn {
+    padding: 7px 14px;
+    font-size: 0.8rem;
+  }
+
+  .room-card { flex-direction: column; }
+  .room-img { width: 100%; height: 250px; }
+  .room-info { width: 100%; }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 480px) {
+  .navbar { padding: 12px 15px; }
+  .logo { font-size: 0.8rem; }
+  .navbar ul { gap: 10px; }
+  .navbar ul li a { font-size: 0.75rem; }
+
+  .book-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+
+  .user-icon { font-size: 20px; }
+}
+
+@media (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .footer-section {
     text-align: center;
-    margin-top: 25px;
-    border-top: 1px solid #333;
-    padding-top: 15px;
-    font-size: 0.9rem;
-    color: #aaa;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
 }

@@ -332,3 +332,147 @@ input {
     font-size: 0.9rem;
     color: #aaa;
 }
+
+@media (max-width: 992px) {
+
+  .page-login,
+  .page-register {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
+
+  .login-wrapper {
+    width: 80%;
+    max-width: 420px;
+    padding: 35px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .page-login,
+  .page-register {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    align-items: center;
+  }
+
+  .login-wrapper {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .remember {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .btn-main {
+    padding: 13px 0;
+    font-size: 16px;
+  }
+
+  .social-options {
+    flex-direction: column;
+  }
+
+  .social-btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .page-login,
+  .page-register {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .login-wrapper {
+    width: 92%;
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 9px;
+    font-size: 12.5px;
+  }
+
+  .btn-main {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+
+  .social-btn {
+    font-size: 12px;
+    padding: 9px;
+  }
+
+  .signup {
+    font-size: 13px;
+  }
+
+  /* FOOTER FIX PENTING */
+  .footer {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-socials a {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
