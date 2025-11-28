@@ -9,6 +9,8 @@ body {
     min-height: 100vh;
     padding-top: 50px;
     padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 10px;
     display: flex;
     justify-content: center;
     align-items: start; /* penting! jangan center */
@@ -19,6 +21,8 @@ body {
     min-height: 100vh;
     padding-top: 65px;
     padding-bottom: 80px;
+    padding-right: 40px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: start; /* penting! jangan center */

@@ -245,18 +245,17 @@ body {
 .features li {
   display: flex;
   align-items: start;
+  text-align: left;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   color: #ffffff;
 }
 
 /* 1 layar penuh */
 .full-wrapper {
     height: 100vh;
-    display: flex;
     flex-direction: column;
     padding: 60px 125px;
-    box-sizing: border-box;
     gap: 30px;
     background-color: #141414;
     margin-top: -100px;
@@ -267,6 +266,7 @@ body {
     flex: 1;
     display: flex;
     gap: 30px;
+    margin-top: 30px;
 }
 
 /* GAMBAR */
@@ -353,7 +353,7 @@ ul li {
 /* JUDUL FASILITAS  */
 .venue-section {
   text-align: center;
-  padding: 80px 10%;
+  padding: 70px 10%;
   background-color: #111;
 }
 
