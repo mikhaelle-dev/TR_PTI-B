@@ -316,43 +316,11 @@ ul li {
     margin-bottom: 5px;
 }
 
-/*  DESKRIPSI 3 BAGIAN MEET  */
-.intro-section.alt2 {
-  padding: 100px 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg, #0f0f0f 0%, #151515 100%);
-}
-
-.intro-container.alt2 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
-  align-items: center;
-  max-width: 1200px;
-}
-
-.intro-images.alt2 {
-  position: relative;
-  flex: 1 1 45%;
-}
-
-.intro-images.alt2 .main-img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.orange-lineee{
-  width: 140px;
-  height: 3px;
-  background-color: #ffd500;
-  margin-bottom: 18px;
-}
 
 /* JUDUL FASILITAS  */
 .venue-section {
   text-align: center;
+    position: relative;
   padding: 70px 10%;
   background-color: #111;
 }
