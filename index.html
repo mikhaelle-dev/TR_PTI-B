@@ -1,311 +1,69 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heaven Prime Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="logreg.css">
 </head>
-
 <body>
+    <div class="page-login">
+    <div class="login-wrapper">
 
-  <!-- NAVBAR -->
-<header class="navbar">
-    <nav>
-        <ul>
-            <li>
-                <div class="logo">
-                    <a href="index.html"><h2>Heaven <span>Prime</span></h2></a>
-                </div>
-            </li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="resto.html">Restaurant</a></li>
-        </ul>
-    </nav>
-<div class="right-side">
-  <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0">
-  <button class="book-btn">Book Now</button> </a>
+        <!-- LOGO TEXT -->
+        <h2 class="logo">
+            <span class="heaven">Heaven</span>
+            <span class="prime">Prime</span>
+        </h2>
 
-  <div class="user-menu">
-    <input type="checkbox" id="toggleUser" />
-    <label for="toggleUser" class="user-icon">
-        <i class="fa-solid fa-user"></i>
-    </label>
+        <p class="subtitle">Your Stay Begins Here</p>
 
-    <div class="user-dropdown">
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-    </div>
-  </div>
-  </div>
-</nav>
-</header>
+        <!-- FORM LOGIN -->
+        <form action="index.html">
 
-  <!-- VIDEO BG -->
-  <iframe class="video-bg"
-    src="https://www.youtube.com/embed/UJEUwEJ6gH4?autoplay=1&mute=1&loop=1&playlist=UJEUwEJ6gH4&controls=0&modestbranding=1&showinfo=0"
-    frameborder="0"
-    allow="autoplay; fullscreen"
-    allowfullscreen>
-  </iframe>
+            <div class="form-group">
+                <label>Email or Username</label>
+                <input type="text" required>
+            </div>
 
-  <!-- judul page -->
-  <section class="room-section">
-    <h3>ELEGANT & COMFORTABLE STAYS</h3>
-    <h1>Modern Luxury for Business & Leisure</h1>
-    <p>
-      Prioritizing comfort and luxury, Heaven Prime offers rooms that are designed with modern and elegant design.
-      With complete facilities and excellent service, every guest can enjoy a quiet and classy stay,
-      whether for business or leisure travel.
-    </p>
-  </section>
-<div class="main-wrapper">
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" required>
+            </div>
 
-  <!-- INTRO penjelasan -->
-  <section class="intro-section">
-    <div class="intro-container">
-      <div class="intro-images">
-        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32" alt="Hotel Lobby" class="main-img">
-        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Pelayanan" class="small-img">
-      </div>
+            <div class="remember">
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    Remember me
+                </label>
 
-      <div class="intro-text">
-        <div class="intro-header">
-          <div class="orange-line"></div>
-          <h4>SELAMAT DATANG DI HEAVEN PRIME</h4>
-        </div>
+                <span><a href="#" class="forgot">Forgot password?</a></span>
+            </div>
 
-        <h2>Hotel Bintang Empat di Kota Salatiga</h2>
-        <p>
-          Memadukan gaya elegan dengan sentuhan pelayanan yang ramah dan hangat, nikmati pengalaman menginap bersama
-          Heaven Prime Salatiga. Sesuai dengan tagline kami, “Your Prime Destination”, Heaven Prime Hotel Salatiga hadir bukan hanya
-          sebagai tempat menginap, tetapi sebagai pilihan utama yang menawarkan kenyamanan, kemudahan, dan layanan istimewa.
-        </p>
+            <button class="btn-main">Login</button>
+</form>
 
-        <h3>Family Room</h3>
-        <ul class="features">
-          <li>178 kamar elegan yang dirancang untuk kenyamanan Anda</li>
-          <li>Grand Ballroom luas, mampu menampung hingga 2.000 tamu</li>
-          <li>Bersantap mewah di dalam dan luar ruangan</li>
-          <li>Tamansari Rooftop eksklusif</li>
-        </ul>
-      </div>
-      
-    </div>
-  </section>
+<div class="divider">or continue with</div>
 
+<div class="social-options">
+    <button class="social-btn">
+        <i class="fab fa-google"></i> Google
+    </button>
 
-  <!-- fasilitas -->
-  <section class="venue-section">
-    <h1>Prime Venue for Every Occasion</h1>
-    <p class="description">
-      With a comfortable atmosphere and complete facilities, Heaven Prime presents the best venue for various needs.
-    </p>
+    <button class="social-btn">
+        <i class="fa fa-phone"></i> Phone
+    </button>
+</div>
 
-    <div class="venue-grid">
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/1200x/e7/de/96/e7de96b3deeaf20fad201ef4f382b85b.jpg" alt="Grand Ballroom">
-        <h3>Grand Ballroom</h3>
-        <p>Ideal for weddings & large corporate events</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/d5/2f/e9/d52fe9b7c0247e02a85c78c8c6d02209.jpg" alt="Outdoor Terrace">
-        <h3>Outdoor Terrace</h3>
-        <p>Perfect for semi-formal or casual events</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/48/67/55/486755437e4965fda0979980d56f313c.jpg" alt="Exsclusive Rooftop">
-        <h3>Exsclusive Rooftop</h3>
-        <p>Exsclusive Rooftop with panoramic view</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/6c/6e/49/6c6e49452e88775e96ac7b0bdde1f35a.jpg" alt="Conference Hall">
-        <h3>Conference Hall</h3>
-        <p>Modern space for business and seminars</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/38/2e/77/382e773b9f3f8fe6ea7806da178be3e6.jpg" alt="Garden Lounge">
-        <h3>Garden Lounge</h3>
-        <p>Relaxing atmosphere surrounded by nature</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/58/e0/26/58e026032a376f2cb6423d61da2f1af4.jpg" alt="Prime Dining">
-        <h3>Prime Dining</h3>
-        <p>Exclusive dining venue</p>
-      <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/1200x/cc/ab/b7/ccabb7bbdb3d7098d506cca6ebb18a93.jpg" alt="Art Gallery Hall">
-        <h3>Art Gallery Hall</h3>
-        <p>Elegan art gallery hall</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-      <div class="venue-card">
-        <img src="https://i.pinimg.com/736x/8e/be/4d/8ebe4d748bde51d627302ece7c5ee4f8.jpg" alt="Meeting Room">
-        <h3>Executive Meeting Room</h3>
-        <p>Private space with premium facilities</p>
-        <a href="https://www.marriott.com/en-us/hotels/jktkj-aloft-jakarta-kebon-jeruk/rooms/"><button>View Details →</button></a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- BAGIAN LOCATION HOTEL -->
-  <section class="location-section">
-    <h1>Prime Location with<br>Excellent Accessibility</h1>
-    <p class="description">
-      Located in a strategic location, Heaven Prime has easy access to major destinations.
-    </p>
-
-    <div class="location-grid">
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/1200x/50/f7/6d/50f76df7ea0fee507d1a2a91be958f3a.jpg" alt="Traditional Markets">
-        <h3>Traditional Markets & Shopping Centers</h3>
-        <p>Easily accessible for local shopping and culinary experiences.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/736x/63/54/8d/63548d5a3ac692f6d0caf29eded05e0e.jpg" alt="Regional Government">
-        <h3>Regional Government Headquarters</h3>
-        <p>5 minutes away, perfect for business travelers.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/1200x/9f/d2/1c/9fd21c9d120f0bb20558435a1358effd.jpg" alt="UKSW FTI Salatiga">
-        <h3>UKSW FTI Salatiga</h3>
-        <p>10 minutes away.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/736x/3c/d7/e6/3cd7e6e906dc066fea27c866683599dd.jpg" alt="POLRES">
-        <h3>POLRES Salatiga</h3>
-        <p> Nearby and convenient.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/1200x/5b/92/12/5b92128c01b6bf18b2624df85d2714c8.jpg" alt="Mount Telomoyo">
-        <h3>Mount Telomoyo</h3>
-        <p>45 minutes by jeep.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/736x/8e/06/af/8e06af48d459f1a877569b1932e25f33.jpg" alt="Rawa Pening">
-        <h3>Rawa Pening</h3>
-        <p>25 minutes away.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/1200x/c4/97/1e/c4971ef1088f9c83fbd60019d96df0c7.jpg" alt="Merapi Mount">
-        <h3>Merapi Mount</h3>
-        <p>30 minutes away.</p>
-      </div>
-
-      <div class="location-card">
-        <img src="https://i.pinimg.com/736x/4a/3b/2c/4a3b2ceb3d6f1470cb5a809c22a9f3b1.jpg" alt="Salatiga Toll Gate">
-        <h3>Salatiga Toll Gate</h3>
-        <p>10 minutes away.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- BAGIAN GALLERY -->
-  <section class="gallery-section">
-    <div class="gallery-header">
-      <h4>OUR GALLERY</h4>
-      <h2>Discover the Beauty of Heaven Prime</h2>
-      <p>Explore moments, spaces, and experiences through our curated photo collection.</p>
+<p class="signup">
+    Don't have an account? <a href="register.html">Sign up</a>
+</p>
+</div>
     </div>
 
-    <div class="gallery-grid">
-      <img src="https://i.pinimg.com/1200x/42/b6/8c/42b68cd2490f7a0467234a71b4d4d6fb.jpg">
-      <img src="https://i.pinimg.com/1200x/c7/bc/80/c7bc806976a37284f8696c7a540d0f1b.jpg">
-      <img src="https://i.pinimg.com/736x/94/28/fd/9428fd761c380066f2e4d022d174b7dc.jpg">
-      <img src="https://i.pinimg.com/1200x/4f/2a/db/4f2adb87a35c0ddcda386592c71d85c7.jpg">
-      <img src="https://i.pinimg.com/1200x/1f/48/4f/1f484f3fadf1e34daeed8b0436123b87.jpg">
-      <img src="https://i.pinimg.com/1200x/5a/3f/bc/5a3fbc6821b0ce00a8eeb8a36283b41b.jpg">
-      <img src="https://i.pinimg.com/1200x/1b/b0/72/1bb07222a59e265ba716cbc173934457.jpg">
-      <img src="https://i.pinimg.com/736x/2d/e0/47/2de04780a78d8ef6494659e9024b8378.jpg">
-      <img src="https://i.pinimg.com/736x/7b/94/ae/7b94aef7136b22d2304d8dcfe5866819.jpg">
-      <img src="https://i.pinimg.com/1200x/3b/54/f5/3b54f5c140353185d3778c366d9f7a11.jpg">
-      <img src="https://i.pinimg.com/736x/9e/be/12/9ebe12b03d0a5b025b09d93e6339ae6d.jpg">
-      <img src="https://i.pinimg.com/1200x/f8/ee/15/f8ee15b5f4bfae9c71ee97242f7cb94d.jpg">
-      <img src="https://i.pinimg.com/736x/fd/73/aa/fd73aaff77742ae9bc96e60328dc4422.jpg">
-      <img src="https://i.pinimg.com/1200x/12/7b/57/127b57775a88c9dc949216a1ca605974.jpg">
-      <img src="https://i.pinimg.com/736x/fd/36/3c/fd363c7d67ca6829f2ee0da1352c5cd6.jpg">
-    </div>
-  </section>
-
-  <!-- BAGIAN SPECIAL OFFER -->
-  <section class="location-section">
-    <h1>Special Offer</h1>
-    <p class="description">
-      Heaven Prime Hotel Salatiga Official Website / Special Offer
-    </p>
-  </section>
-
-    <div class="offer-grid">
-
-    <div class="offer-card">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtT0eiGYW5WLLuaUJXf6KIZRB7tNVUIY0vA&s" alt="Stay and Savor">
-      <h3>Stay and Savor September</h3>
-      <p>A selection of special food and drink menus from our restaurant.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-    <div class="offer-card">
-      <img src="https://images.bisnis.com/posts/2024/06/13/1773940/lk_simpanglima_romantic_dinner_1_1718275585.jpg" alt="Romantic Dinner">
-      <h3>Romantic Dinner</h3>
-      <p>Romantic dinner package with exclusive decoration.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-    <div class="offer-card">
-      <img src="https://pix10.agoda.net/hotelImages/12468672/-1/4a1e547fb1526875dbcad5bddf8ea4a6.jpg?ca=21&ce=0&s=414x232" alt="Room Package">
-      <h3>Stay & Dine Package</h3>
-      <p>Complete accommodation package with meals & free laundry.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-    <div class="offer-card">
-      <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/727827013.jpg?k=84091ad740b46163471744435e99b127843579797e7d14cc55f0435723882be5&o=" alt="Room Only">
-      <h3>Special Room Only</h3>
-      <p>Exclusive promo for Deluxe room type.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-    <div class="offer-card">
-      <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YX4lVgLE4liDng3G/33c5b385-e482-479c-95e0-079ca0e89519-AR0LN9RZyRtBWxaW.png" alt="Honeymoon Package">
-      <h3>Honeymoon Package</h3>
-      <p>Special large bed and good decoration with view.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-    <div class="offer-card">
-      <img src="https://i.pinimg.com/1200x/73/76/15/7376155f15e380e807f0e7e3cf121238.jpg" alt="Spa & Wellness">
-      <h3>Spa & Wellness Package</h3>
-      <p>Free Massage, Gym, and Sauna with Healty drink.</p>
-      <center><a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0" class="offer-btn">Book Now →</a></center>
-    </div>
-
-  </div>
-
+<div class="footer-wrapper"></div>
 <footer class="footer">
     <div class="footer-container">
 
@@ -356,6 +114,6 @@
 
     <p class="footer-bottom">© 2025 HeavenPrime Hotel. All rights reserved.</p>
 </footer>
-
+</div>
 </body>
 </html>
