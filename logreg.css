@@ -246,8 +246,11 @@ input {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;  /* <- ini yang membetulkan */
+    flex-direction: column; /* konten jadi menumpuk ke bawah */
+    justify-content: center;
+    align-items: center;    /* rata tengah horizontal */
+    text-align: center;     /* teks ikut tengah */
+    gap: 20px;              /* kasih jarak biar rapi */
 }
 
 .footer-section {
@@ -276,7 +279,7 @@ input {
     gap: 15px;
     align-items: center;
     flex-wrap: nowrap;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .footer-socials a {
@@ -307,13 +310,6 @@ input {
     color: #111;
 }
 
-/* Headings */
-.footer-heading {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #d4af37;
-}
-
 /* Links */
 .footer-section a {
     display: block;
@@ -329,12 +325,13 @@ input {
 
 /* Bottom text */
 .footer-bottom {
-    text-align: center;
-    margin-top: 25px;
-    border-top: 1px solid #333;
-    padding-top: 15px;
-    font-size: 0.9rem;
-    color: #aaa;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
 @media (max-width: 992px) {
