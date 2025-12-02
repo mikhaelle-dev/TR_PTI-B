@@ -206,12 +206,16 @@ body {
     text-decoration: none;
 }
 
+.reserve-button:hover {
+  background-color: white;
+}
+
 .reserve-button:visited {
     color: black; 
 }
 
 .menu-section {
-    background-color: #111;
+  background-color: #111;
   padding: 100px 10%;
   text-align: center;
 }
@@ -267,7 +271,6 @@ body {
   line-height: 1.6;
 }
 
-/*  FOOTER  */
 .footer {
     background: #0c0c0c;
     padding: 30px 60px 20px;
@@ -278,7 +281,7 @@ body {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;  /* <- ini yang membetulkan */
+    align-items: flex-start;
 }
 
 .footer-section {
@@ -338,14 +341,12 @@ body {
     color: #111;
 }
 
-/* Headings */
 .footer-heading {
     font-size: 1.2rem;
     margin-bottom: 15px;
     color: #d4af37;
 }
 
-/* Links */
 .footer-section a {
     display: block;
     margin-bottom: 10px;
@@ -358,7 +359,6 @@ body {
     color: white;
 }
 
-/* Bottom text */
 .footer-bottom {
     text-align: center;
     margin-top: 25px;
@@ -390,8 +390,6 @@ body {
   }
 }
 
-
-/* MOBILE MEDIUM */
 @media (max-width: 768px) {
   .navbar {
     padding: 14px 18px;
@@ -417,7 +415,6 @@ body {
     font-size: 0.8rem;
   }
 
-  /* Resto Title */
   .resto-title h1 {
     font-size: 2.3em;
   }
@@ -426,7 +423,6 @@ body {
     font-size: 1.5em;
   }
 
-  /* Food Card */
   .food-card {
     flex-direction: column;
     text-align: center;
@@ -437,15 +433,12 @@ body {
     height: 230px;
   }
 
-  /* Menu jadi 1 kolom */
   .menu-grid {
     grid-template-columns: 1fr;
     gap: 22px;
   }
 }
 
-
-/* MOBILE SMALL */
 @media (max-width: 480px) {
   .navbar {
     padding: 12px 15px;
@@ -468,15 +461,10 @@ body {
     font-size: 0.75rem;
   }
 
-  /* Title */
   .resto-title h1 {
     font-size: 1.9em;
   }
 
-  /* Footer fix agar tidak kepotong */
-/* ========== FOOTER RESPONSIVE ========== */
-
-/* --- Tablet 992px --- */
 @media (max-width: 768px) {
 
   .footer-container {
