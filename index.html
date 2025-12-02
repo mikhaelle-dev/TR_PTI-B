@@ -4,59 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Heaven Prime</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="welcome.css">
 </head>
-
 <body>
 
-    <div class="welcome-container">
+    <div class="split-container">
 
-        <div class="welcome-content">
-
-            <h2 class="welcome-to">WELCOME TO</h2>
-
-            <h1 class="welcome-title">
-                <span class="heaven">Heaven</span>
-                <span class="prime">Prime</span>
-            </h1>
-
-            <p class="welcome-subtitle">
-                Experience luxury, comfort, and excellence before you begin your stay.
-            </p>
-
-            <div class="welcome-buttons">
-                <a href="login.html" class="btn-outline">Login</a>
-                <a href="register.html" class="btn-outline">Register</a>
+        <!-- BAGIAN KIRI: VIDEO FULL COVER -->
+        <div class="video-section">
+            <div class="video-wrapper">
+                <iframe id="videoBG"
+                    src="https://www.youtube.com/embed/BNFkN3z4Nhk?autoplay=1&mute=1&loop=1&playlist=BNFkN3z4Nhk&controls=0&showinfo=0&rel=0&modestbranding=1&disablekb=1"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
             </div>
+            <div class="video-overlay"></div>
+        </div>
 
+        <!-- BAGIAN KANAN -->
+        <div class="content-section">
+            <div class="main-content-wrapper">
+                <h2 class="welcome-to">WELCOME TO</h2>
+
+                <h1 class="welcome-title">
+                    <span class="heaven">Heaven</span>
+                    <span class="prime">Prime</span>
+                </h1>
+
+                <p class="welcome-subtitle">
+                    Experience luxury, comfort, and excellence before you begin your stay.
+                </p>
+
+                <div class="welcome-buttons">
+                    <a href="login.html" class="btn-outline">Login</a>
+                    <a href="register.html" class="btn-outline">Register</a>
+                </div>
+
+                <footer class="footer">
+                    <p class="footer-bottom">© 2025 HeavenPrime Hotel. All rights reserved.</p>
+                </footer>
+            </div>
         </div>
 
     </div>
-
-    <footer class="footer">
-    <div class="footer-container">
-
-        <!-- Brand -->
-        <div class="footer-section">
-            <h2 class="footer-title">Heaven <span>Prime</span></h2>
-            <p class="footer-desc">
-                Experience luxury, comfort, and unforgettable hospitality.  
-                Your perfect stay awaits.
-            </p>
-
-            <div class="footer-socials">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/?flo=true"><i class="fab fa-instagram"></i></a>
-                <a href="https://x.com/?lang=en-id"><i class="fab fa-twitter"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=62298312222&text=Halo+Laras+Asri%2C+Saya+mau+booking+kamar&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-
-        <!-- Explore -->
-
-        <p class="footer-bottom">© 2025 HeavenPrime Hotel. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>

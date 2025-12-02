@@ -67,10 +67,10 @@ body {
 
 .user-menu {
     position: relative;
-}
+} 
 
 #toggleUser {
-    display: none;   /* sembunyikan checkbox */
+    display: none;  
 }
 
 .user-icon {
